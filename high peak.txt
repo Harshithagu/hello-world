@@ -1,0 +1,18 @@
+
+
+import random
+i=1
+l1=[]
+l2=[]
+n=int(input('Number of employees : '))
+d={'fitbit plus':7980,'ipod':7980,'MI band':999,'cultpass':2799,'macbook pro':229900,'digital camera':11101,'alexa':9999,'sandwitch toaster':2195,'microwane oven':9800,'scale':4999}
+for key,value in d.items():
+    l1.append(value)
+    l2.append(key)
+#print(l2)
+#res=key,val=random.choice(list(d.items()))
+#print(res)
+res1=random.sample(l1,n)
+print("Here the goodies that are selected for distribution are :",res1)
+result=max(res1)-min(res1)
+print('The difference between the chosen goodie with highest and the lowest price is :',result)
